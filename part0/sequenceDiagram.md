@@ -2,7 +2,7 @@
 sequenceDiagram
     participant browser
     participant server
-    partivipant user
+    participant user
 
     user->>browser: Clicks Save button
 
