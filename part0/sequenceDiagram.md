@@ -2,6 +2,9 @@
 sequenceDiagram
     participant browser
     participant server
+    partivipant user
+
+    user->>browser: Clicks Save button
 
     browser->>server: POST https//studies.cs.helsinki.fi/exampleapp/newNote
     activate server
@@ -31,4 +34,6 @@ sequenceDiagram
     deactivate server    
 
     Note right of browser: The browser executes the callback function that renders the notes 
+
+    browser-->>user: Display all notes
 ```
