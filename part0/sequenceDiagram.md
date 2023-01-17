@@ -2,6 +2,11 @@
 sequenceDiagram
     participant browser
     participant server
+
+    browser->>server: POST https//studies.cs.helsinki.fi/exampleapp/newNote
+    activate server
+    server-->>browser: redirect to all notes
+    deactivate server
     
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
