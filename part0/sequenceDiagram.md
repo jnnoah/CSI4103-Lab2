@@ -1,8 +1,8 @@
 ```mermaid
 sequenceDiagram
+    partiipant user
     participant browser
     participant server
-    participant user
 
     user->>browser: Clicks Save button
 
